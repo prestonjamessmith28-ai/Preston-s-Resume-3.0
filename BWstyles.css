@@ -1,0 +1,57 @@
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+}
+body {
+    color: blueviolet;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: rgb(44, 48, 49);
+    text-align: center;
+    padding: 10px;
+}
+
+.bullited{
+    color: rgb(100, 15, 198);
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.picture {
+    text-align: center;
+    margin: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.head{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: blueviolet;
+}
+
+.values{
+    color: blue;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.joy{
+    color: rgb(228, 198, 5);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: wavy;
+}

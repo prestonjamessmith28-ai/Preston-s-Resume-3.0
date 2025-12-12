@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preston J Smith - Portfolio & Resume</title>
+
+    <style>
+        /* --- BASE STYLES --- */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4; /* Light gray background for contrast against the white paper */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- HEADER BANNER --- */
+        /* This is the Boundary Waters image section */
+        #hero-banner {
+            height: 350px; 
+            /* Using a placeholder scenic lake image below. 
+               REPLACE the URL inside url('') with your actual Boundary Waters image if you have a specific file.
+            */
+            background: url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        /* --- NAVIGATION BAR --- */
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .nav-content {
+            max-width: 900px; 
+            margin: auto; 
+            display: flex; 
+            gap: 40px; 
+            font-size: 18px; 
+            justify-content: center;
+        }
+
+        /* Navigation Links Styling */
+        .nav-link {
+            text-decoration: none; 
+            color: #2b1d0e; /* Dark brown text */
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #6b3f1f; 
+            background-color: #f0f0f0;
+        }
+        
+        /* General Links (Email, LinkedIn) */
+        a.text-link {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a.text-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* --- RESUME PAPER CONTAINER --- */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff; 
+            padding: 50px; /* Generous padding for professional look */
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* --- TYPOGRAPHY --- */
+        h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            margin-top: 0;
+            color: #2b1d0e;
+        }
+        
+        .contact-info {
+            font-size: 16px;
+            margin-bottom: 35px;
+            color: #555;
+        }
+
+        section {
+            margin-bottom: 45px;
+        }
+
+        h2 {
+            color: #6b3f1f;
+            border-bottom: 2px solid #b07a4c; /* Brown underline */
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-subtitle {
+            font-size: 16px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+            color: #444;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* --- IMAGE GALLERY SECTION --- */
+        .personal-gallery {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            max-width: 380px; /* Limits size so they fit side-by-side */
+            height: 250px; /* Fixed height for consistency */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+            /* UPDATED: 'contain' ensures the full image is visible without cropping */
+            object-fit: contain; 
+            background-color: #f9f9f9; /* Subtle background for images that don't fill the box */
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.02); /* Slight zoom on hover */
+        }
+        
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px;
+            }
+            .item-header {
+                flex-direction: column;
+            }
+            .gallery-img {
+                height: auto; /* Allow height to adjust on smaller screens */
+                max-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header id="hero-banner"></header>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#resume" class="nav-link">Resume</a>
+            <a href="FruitNinja.html" class="nav-link">Fruit Ninja Project</a>
+        </div>
+    </nav>
+
+    <div id="resume" class="container">
+        
+        <h1>Preston J Smith</h1>
+        <div class="contact-info">
+            <a href="https://www.linkedin.com/in/preston-smith-91566121b/" class="text-link" target="_blank">LinkedIn Profile</a><br />
+            (763) 350-0472 | <a href="mailto:preston.james.smith.28@gmail.com" class="text-link">preston.james.smith.28@gmail.com</a>
+        </div>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Brigham Young University - Marriott School of Business</div>
+                    <div class="item-subtitle">Apr 2028</div>
+                </div>
+                <div class="item-subtitle">Bachelor of Science in Pre-Business</div>
+                <ul>
+                    <li>GPA: 3.75 / 4.00</li>
+                    <li>Relevant Coursework: Accounting, Information Systems, Economics</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Brigham Young University Marriott School of Business</div>
+                    <div class="item-subtitle">Oct 2025 - Current</div>
+                </div>
+                <div class="item-subtitle">Research Assistant | Provo, UT</div>
+                <ul>
+                    <li>Analyzed scholarly journals and created a 1-page literature review</li>
+                    <li>Developed and wrote a paragraph analysis of a research problem</li>
+                    <li>Created data visualization graphic</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Ebert Construction</div>
+                    <div class="item-subtitle">May 2025 - Aug 2025</div>
+                </div>
+                <div class="item-subtitle">Carpentry/Demolition | Corcoran, MN</div>
+                <ul>
+                    <li>Installed steel framing, supports, and flooring panels in under two weeks</li>
+                    <li>Demolished walls, removed ceiling tiles and carpet</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">McDonald's</div>
+                    <div class="item-subtitle">Apr 2022 - Jun 2022</div>
+                </div>
+                <div class="item-subtitle">Shift Manager | Medina, MN</div>
+                <ul>
+                    <li>Strategized designation of 10 personnel to optimize production efficiency</li>
+                    <li>Planned, organized, directed, and led a team of 10+ employees</li>
+                    <li>Trained staff in best practices for job efficiency and safety</li>
+                    <li>Mastered managerial tasks in under one month; opened and closed store independently</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Leadership & Service</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">The Church of Jesus Christ of Latter-day Saints</div>
+                    <div class="item-subtitle">Jul 2022 - Jul 2024</div>
+                </div>
+                <div class="item-subtitle">Volunteer Representative | Asunción, Paraguay</div>
+                <ul>
+                    <li>Developed traits such as goal setting, accountability, and discipline</li>
+                    <li>Adapted to a foreign culture and built relationships of trust</li>
+                    <li>Taught life skills to individuals from diverse countries</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Awards, Skills & Interests</h2>
+            <ul>
+                <li><strong>Technical:</strong> Excel VBA, Macros, SQL, Power BI</li>
+                <li><strong>Awards:</strong> Eagle Scout, Boy Scouts of America</li>
+                <li><strong>Athletics:</strong> Track Team Captain (Improved 300m hurdle time by 2.66 seconds in one season)</li>
+                <li><strong>Languages:</strong> Spanish (Fluent in speaking; proficient in reading and writing)</li>
+                <li><strong>Music:</strong> Directed drumline; received superior ratings in ensemble and solo performances</li>
+                <li><strong>Hobbies:</strong> Competitive team sports, boating, biking, backpacking, climbing</li>
+            </ul>
+        </section>
+
+        <section class="personal-gallery">
+            <h2>Personal Gallery</h2>
+            <div class="gallery-container">
+                <img src="familypyramid.jpg" alt="Family Pyramid" class="gallery-img" />
+                <img src="familyPicture.jpg" alt="Family Picture" class="gallery-img" />
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
