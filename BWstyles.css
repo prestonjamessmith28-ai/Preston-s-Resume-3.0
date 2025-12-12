@@ -55,3 +55,7 @@ header {
     font-weight: bold;
     text-decoration: wavy;
 }
+
+body {
+    background-color: rgb(233, 239, 121);
+}
